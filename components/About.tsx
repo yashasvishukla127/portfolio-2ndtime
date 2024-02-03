@@ -10,12 +10,13 @@ type Props = {}
 const About = (props: Props) => {
   return (
     <div className='h-screen flex flex-col relative text-center md:text-left md:flex-row
-    max-w-7xl px-10 mx-auto justify-evenly items-center '>
+    max-w-7xl px-10 mx-auto justify-evenly items-center space-y-8  md:space-y-0'>
+     <h3 className='tracking-[20px] uppercase text-blue-800 absolute top-12 text-2xl md:top-24 font-medium shadow-blue-800 shadow-lg hover:-skew-y-3'>about</h3> 
 
-
-      <div className=''>
-        <h4 className=' text-pretty uppercase tracking-[20px] text-4xl font-extrabold text-[#161A30] '> here is a   <span className='underline'>little</span> BACKGROUND</h4>
-        <p>
+      <div className='space-y-10 px-0 md:px-10'>
+        <h4 className=' text-pretty uppercase tracking-[20px] text-4xl font-extrabold shadow-black shadow-lg hover:-skew-y-3 text-[#161A30] '>
+           here is a   <span className='underline'>little</span> BACKGROUND</h4>
+        <p className='tracking-[2px] text-slate-950 uppercase text- font-serif'>
         Greetings,
 
         I am a dedicated web developer proficient in a comprehensive range of technologies 

@@ -37,7 +37,7 @@ const Hero = (props: Props) => {
 
         <div className='z-20'>
             <h2 className='translate-y-20 bottom-6 text-4xl font-semibold px-10 text-[#43433f]'>
-                <span className='mr-3' >{text}</span>
+                <span className='mr-3 uppercase' >{text}</span>
                 <Cursor cursorColor= "#3876BF" />
             </h2>
 
