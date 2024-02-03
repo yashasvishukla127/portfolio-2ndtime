@@ -14,7 +14,7 @@ function Header({}: Props) {
       <div className='flex flex-row items-center'>
         <SocialIcon url='https://github.com/yashasvishukla127'
             fgColor='#6e5494' bgColor='transparent'
-            className='hover:cursor-pointer'/>
+            className='hover:cursor-pointer hover:scale-150 transition-transform duration-300'/>
 
         <SocialIcon url='https://www.linkedin.com/in/yashasvi-shukla-08401b255/'
             fgColor='#0a66c2' bgColor='transparent'
@@ -34,10 +34,13 @@ function Header({}: Props) {
       <div className='flex flex-row items-center text-gray-500'>
           <SocialIcon
             className='cursor-pointer'
-            url='https://mail.google.com/mail/u/0/#inbox?compose=CllgCJvlqmpjQjTMgNwGqfSNFVBvZxwwjBmvsfGhKnxZRZBKdxQntJgBjbvTFdvCZmKRpQLrdBV'
+            url='mailto:yashshukla127@gmail.com?cc=opportunity for frontend devlopment'
+            network='email'
             fgColor='gray'
             bgColor='transparent'/>
-          <p className='uppercase hidden md:inline-flex text-sm'>Get in Touch</p>
+           <p className='uppercase hidden md:inline-flex text-sm'>Get in Touch</p>
+
+    
   
       </div> 
 

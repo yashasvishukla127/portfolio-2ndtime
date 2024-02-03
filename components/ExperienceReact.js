@@ -49,7 +49,7 @@ const ExperienceReact = () => {
         
         <div ref={ref} className='z-10 mx-auto relative mt-32 justify-center left-[4%]'>
            <motion.div style={{scaleY:scrollYProgress}}
-           className='absolute   top-10 w-[5px] h-full bg-indigo-950 origin-top left-[6%]' />
+           className='absolute   top-10 w-[5px] h-full  bg-indigo-950 origin-top left-[6%]' />
             
             {/* the cirlcle motion which was not working was solved by alligning this👆 left */}
             <ul className='w-full flex flex-col items-start justify-between ml-4  left-100'>
