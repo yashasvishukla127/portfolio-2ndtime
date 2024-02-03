@@ -1,11 +1,16 @@
 import Image from "next/image";
+import Head from "next/head";
+import Header from "@/components/Header";
+
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <h1 className="text-3xl font-bold text-red-500">
-        hey test 
-      </h1>
-    </main>
+    <>
+      <Head>
+            <title> yash portfolio</title>
+      </Head>
+
+      <Header/>
+    </>
   );
 }
