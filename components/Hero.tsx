@@ -30,7 +30,8 @@ const Hero = (props: Props) => {
             
         
             <BackgroundCircles />  
-            <Image className='h-32 w-32 relative rounded-full object-cover top-20 mx-auto translate-y-[70px]' src= {clgstudent} alt='yash'/>
+            <Image className='h-32 w-32 relative rounded-full object-cover top-20 mx-auto 
+            translate-y-[70px] blur-[1px] grayscale hover:grayscale-0 hover:blur-0' src= {clgstudent} alt='yash'/>
         </div>
 
 
