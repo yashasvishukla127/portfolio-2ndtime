@@ -64,14 +64,13 @@ function Header({}: Props) {
           duration:1.3
         }}
       
-        className='flex flex-row items-center hover:scale-150 transform transition-transform duration-300 '>
+        className='flex flex-row items-center  '>
           <SocialIcon
-            className='cursor-pointer'
+            className='cursor-pointer hover:scale-150 transform transition-transform duration-300'
             url='mailto:yashshukla127@gmail.com?cc=opportunity for frontend devlopment'
             network='email'
             fgColor='gray'
             bgColor='transparent'/>
-           {/* <p className='uppercase hidden md:inline-flex text-sm'>Get in Touch</p> */}
 
     
   
