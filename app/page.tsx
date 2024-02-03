@@ -4,6 +4,7 @@ import Head from "next/head";
 import Header from "@/components/Header";
 import ExperienceReact from "@/components/ExperienceReact";
 import Hero from "@/components/Hero";
+import About from "@/components/About";
 
 export default function Home() {
   return (
@@ -17,6 +18,9 @@ export default function Home() {
         <Hero/>
       </section>
 
+      <section id='about' className='snap-start'>
+        <About/>
+      </section>
 
       <section id="experience" className="snap-center">
         <ExperienceReact/>

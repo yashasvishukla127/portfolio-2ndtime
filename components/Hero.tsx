@@ -40,12 +40,33 @@ const Hero = (props: Props) => {
                 <Cursor cursorColor= "#3876BF" />
             </h2>
 
+                                                {/* this button changes are in GLOBALL.CSS  */}
+            <div className='pt-5 translate-y-40 text-[#8bb2c5] flex space-x-2'>
+                    <Link href= '#about'>   <button className='heroButton shadow-blue-800 shadow-2xl items-center before:ease relative flex h-14 w-40  overflow-hidden border-6 
+                     bg-transparent font-bold text-orange-600 shadow-2xl transition-all duration-300 before:absolute before:inset-0 before:border-12
+                      before:border-[#FC6736] before:duration-100 before:ease-linear  hover:text-white hover:shadow-orange-800 
+                      hover:before:border-[80px]  px-[30%]' >
+                         <span className='relative z-10'> About</span></button>  
+                    </Link>
+                      
+                    <Link href= '#projects'> <button className='heroButton  shadow-blue-800 shadow-2xl before:ease relative flex h-14 w-40  overflow-hidden border-6 
+                     bg-transparent font-bold text-orange-600 shadow-2xl transition-all duration-300 before:absolute before:inset-0 before:border-12
+                      before:border-[#FC6736] before:duration-100 before:ease-linear  hover:text-white hover:shadow-orange-800 
+                      hover:before:border-[80px]'><span className='relative z-10'> Projects</span></button>  </Link>
 
-            <div className='pt-5 translate-y-40 text-[#8bb2c5]'>
-                    <Link href= '#about'>   <button className='heroButton' >About</button>   </Link>
-                    <Link href= '#projects'> <button className='heroButton'>Projects</button> </Link>
-                    <Link href= '#skills'> <button className='heroButton'>Skills</button> </Link>
-                    <Link href= '#experience'> <button className='heroButton'>Experience</button>  </Link>
+
+                    <Link href= '#skills'> <button className='heroButton  shadow-blue-800 shadow-2xl before:ease relative flex h-14 w-40  overflow-hidden border-6 
+                     bg-transparent font-bold text-orange-600 shadow-2xl transition-all duration-300 before:absolute before:inset-0 before:border-12
+                      before:border-[#FC6736] before:duration-100 before:ease-linear  hover:text-white hover:shadow-orange-800 
+                      hover:before:border-[80px] '><span className='relative z-10'> Skills</span></button> </Link>
+
+                    <Link href= '#experience'> <button className=" heroButton shadow-blue-800 shadow-2xl before:ease relative flex h-14 w-40  overflow-hidden border-6 
+                     bg-transparent font-bold text-orange-600 shadow-2xl transition-all duration-300 before:absolute before:inset-0 before:border-12
+                      before:border-[#FC6736] before:duration-100 before:ease-linear  hover:text-white hover:shadow-orange-800 
+                      hover:before:border-[80px]">
+                        <span className="relative z-10">experience</span>
+                        </button>  
+                    </Link>
                     
             </div>
         </div>    
@@ -59,3 +80,4 @@ export default Hero
 
 
 // notes for this section
+// applied shadow 
