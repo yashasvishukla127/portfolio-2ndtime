@@ -14,6 +14,7 @@ export default function Home() {
       </Head>
 
       <Header/>
+      
       <section id='hero' className='snap-start'>
         <Hero/>
       </section>
@@ -25,6 +26,8 @@ export default function Home() {
       <section id="experience" className="snap-center">
         <ExperienceReact/>
       </section>
+
+      {/* in project section use scroll snap align */}
      
     </>
   );
