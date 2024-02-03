@@ -26,7 +26,7 @@ const Hero = (props: Props) => {
         
         <div className='-translate-y-40'>
             <h1 className='uppercase text-3xl text-[#0f0f0f] pb-2 tracking-[15px]
-            translate-y-20 relative top-[-20px]'>Software developer</h1>
+            translate-y-20 relative top-[-20px] font-semibold shadow-black shadow-lg border-2 border-blue-950'>Software developer</h1>
             
         
             <BackgroundCircles />  
@@ -52,13 +52,13 @@ const Hero = (props: Props) => {
                     <Link href= '#projects'> <button className='heroButton  shadow-blue-800 shadow-2xl before:ease relative flex h-14 w-40  overflow-hidden border-6 
                      bg-transparent font-bold text-orange-600 shadow-2xl transition-all duration-300 before:absolute before:inset-0 before:border-12
                       before:border-[#FC6736] before:duration-100 before:ease-linear  hover:text-white hover:shadow-orange-800 
-                      hover:before:border-[80px]'><span className='relative z-10'> Projects</span></button>  </Link>
+                      hover:before:border-[80px]'><span className='relative z-10 px-2'> Projects</span></button>  </Link>
 
 
                     <Link href= '#skills'> <button className='heroButton  shadow-blue-800 shadow-2xl before:ease relative flex h-14 w-40  overflow-hidden border-6 
                      bg-transparent font-bold text-orange-600 shadow-2xl transition-all duration-300 before:absolute before:inset-0 before:border-12
                       before:border-[#FC6736] before:duration-100 before:ease-linear  hover:text-white hover:shadow-orange-800 
-                      hover:before:border-[80px] '><span className='relative z-10'> Skills</span></button> </Link>
+                      hover:before:border-[80px] '><span className='relative z-10 px-6'> Skills</span></button> </Link>
 
                     <Link href= '#experience'> <button className=" heroButton shadow-blue-800 shadow-2xl before:ease relative flex h-14 w-40  overflow-hidden border-6 
                      bg-transparent font-bold text-orange-600 shadow-2xl transition-all duration-300 before:absolute before:inset-0 before:border-12
