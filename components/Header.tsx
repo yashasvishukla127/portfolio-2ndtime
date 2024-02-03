@@ -38,7 +38,7 @@ function Header({}: Props) {
 
         <SocialIcon url='https://twitter.com/Yashasvishukl'
             fgColor='#1D9BF0' bgColor='transparent'
-            className="hover:scale-150  transform transition-transform duration-300"/>
+            className="hover:scale-150  transform transition-transform duration-300  "/>
 
         <SocialIcon url='https://hashnode.com/@yashasvi127'
             fgColor='transparent' bgColor='transparent'
