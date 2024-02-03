@@ -13,11 +13,11 @@ const Details = ({position , company , time , work}) => {
         whileInView={{x:0}}
         transition={{duration:0.5,type:"spring"}}
         >
-            <h3 className='capitalize font-bold text-2xl'>
+            <h3 className='capitalize font-extrabold font-bold text-2xl text-[#0C2D57]'>
                 {position}&nbsp;
-                <span className='capitalize text-3xl font-medium text-orange-500'> @{company}</span>
+                <span className='font-sans text-3xl font-medium uppercase text-[#FC6736]'> @{company}</span>
                 <p className='capitalize text-[15px]  font-semibold text-black/75' >{time}</p>
-                <p className='font-semibold text-[20px] w-full'>{work}</p>
+                <p className='font-semibold text-[20px] w-full text-gray-900'>{work}</p>
             </h3>
         </motion.div>
     </li>
