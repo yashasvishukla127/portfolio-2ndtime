@@ -5,7 +5,8 @@ import Header from "@/components/Header";
 import ExperienceReact from "@/components/ExperienceReact";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
-import About2 from "@/components/About2";
+import Projects from "@/components/Projects";
+
 
 export default function Home() {
   return (
@@ -24,7 +25,8 @@ export default function Home() {
         <About/>
       </section>
 
-      {/* <About2/>      // for experimental learning */}
+      <Projects/>
+    
 
       <section id="experience" className="snap-center">
         <ExperienceReact/>

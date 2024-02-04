@@ -30,14 +30,25 @@ const About = (props: Props) => {
         </Tilt>
       </div> */}
 
-      <div className='flex-shrink-0 mt-5 translate-y-20 justify-center'>        
+      <div className='flex-shrink-0 mt-5 -translate-y-20 justify-center'>        
         <Tilt className=' h-[350px] w-[300px] bg-transparent '>
-          <img src='/programmer.jpg' alt='programer'
-          className='sm:rounded-full  flex-shrink-0 object-cover
-          sm:h-45 sm:w-40  -mb-20
+          <motion.img initial={{
+          x:-200,
+          opacity:0,
+        }}
+        transition={{
+          duration:1.33
+        }}
+        whileInView={{
+          x:0,
+          opacity:1,
+        }}
+           src='/programmer.jpg' alt='programer'
+          className='sm:rounded-full  flex-shrink-0 object-cover shadow-2xl shadow-black
+          sm:h-45 sm:w-40  -mb-20 sm
           md:h-80 md:w-80 md:rounded-none
-          lg:h-120 lg:w-120 
-          xl:h-[500px] xl:w-[600px] xl:-translate-y-40 '/>
+          lg:h-120 lg:w-80 lg:-translate-y-30
+          xl:h-[500px] xl:w-[300px] xl:-translate-y-40 '/>
 
         </Tilt>
       </div>
@@ -47,7 +58,7 @@ const About = (props: Props) => {
          shadow-black shadow-lg hover:-skew-y-3 text-[#161A30] '>
            here is a   <span className='underline'>little</span> BACKGROUND</h4>
 
-        <p className='tracking-[2px] text-slate-950 uppercase text- font-serif'>
+        <p className='tracking-[1px] text-slate-950 uppercase text- font-serif'>
         Greetings,I am a dedicated web developer proficient in a comprehensive range of technologies 
         essential for modern web applications. My expertise encompasses React, JavaScript, 
         HTML, CSS, and Next.js, ensuring that I can craft intuitive and dynamic web interfaces 
@@ -63,14 +74,7 @@ const About = (props: Props) => {
         ensuring excellence and user satisfaction at every step.
         </p>
         
-        
-
       </div>
-
-
-
-
-
 
     </div>
   </>   
