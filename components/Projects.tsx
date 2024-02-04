@@ -1,6 +1,6 @@
 import React from 'react'
-import ProjectCard from './ProjectCard'
 import {motion} from 'framer-motion'
+import ProjectShowcase from './ProjectShowcase'
 
 type Props = {}
 
@@ -11,13 +11,13 @@ const Projects = (props: Props) => {
      className='h-screen flex flex-col relative text-left md:flex-row max-w-full px-10 
     justify-evenly mx-auto items-center'>
         
-        <h3 className='text-4xl font-extrabold absolute top-24 tracking-[12px] text-[#161A30] shadow-2xl shadow-black'> PROJECTS</h3>
+        <h3 className='text-4xl font-extrabold absolute top-24 tracking-[12px] text-[#F94C10] shadow-2xl shadow-orange-500'> PROJECTS</h3>
 
         <div className='w-full flex  absolute space-x-5 overflow-x-scroll p-10 snap-x snap-mandatory top-[30%]'>
             <motion.div className='flex-none '
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }} >  
-                <ProjectCard name="restaurant landing page" 
+                <ProjectShowcase name="restaurant landing page" 
                 link="https://yashasvishukla127.github.io/restaurantwebsite/" 
                 image="/laurels2.jpg" tech1="react" tech2="js" tech3="css" 
                 tech1img={"/react.svg"} tech2img={"/js.svg"} tech3img={"/css.png"}
@@ -27,7 +27,7 @@ const Projects = (props: Props) => {
             <motion.div className='flex-none'
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }} >
-                <ProjectCard name='portfolio'
+                <ProjectShowcase name='portfolio'
                 link='https://portfolio-2ndtime-9az6yr2m4-yashasvi-shuklas-projects.vercel.app'
                 image='/programmer.jpg' tech1="next" tech2="tailwind" tech3="typescript"
                 tech1img={"/next.svg"} tech2img={"/tailwind-css.svg"} tech3img={"/typescript.png"}
@@ -37,7 +37,7 @@ const Projects = (props: Props) => {
             <motion.div className='flex-none'
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }} >
-                <ProjectCard name='portfolio'
+                <ProjectShowcase name='portfolio'
                 link='https://portfolio-2ndtime-9az6yr2m4-yashasvi-shuklas-projects.vercel.app'
                 image='/programmer.jpg' tech1="next" tech2="tailwind" tech3="typescript"
                 tech1img={"/next.svg"} tech2img={"/tailwind-css.svg"} tech3img={"/typescript.png"}

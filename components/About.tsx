@@ -1,13 +1,9 @@
 "use client"
 import React from 'react'
 import {motion} from "framer-motion"
-// import Tilt from "react-parallax-tilt"
 import {Tilt} from 'react-tilt'
 
-import programmer from '@/public/programmer.jpg'
-import worker from '@/public/programmer.svg'
-import { text } from 'stream/consumers'
-import Image from 'next/image'
+
 
 type Props = {}
 
@@ -16,19 +12,8 @@ const About = (props: Props) => {
    <>
     <div className='h-screen flex flex-col relative text-center md:text-left md:flex-row
     max-w-7xl px-10 mx-auto justify-evenly items-center space-y-8  md:space-y-0'>
-      <h3 className='tracking-[20px] uppercase text-blue-800 absolute top-24 text-3xl
-      md:top-20 sm:top-5 font-bold shadow-blue-800 shadow-lg hover:-skew-y-3'>about</h3>
-
-      
-       {/* <div className='flex-shrink-0 '>        
-        <Tilt className=' h-[350px] w-[300px] bg-transparent '>
-          <Image src={programmer} alt='programer'
-           height={400}  width={300} 
-          className='blur-[1px] grayscale-0 py-10 object-fill hover:grayscale hover:blur-0 shadow-2xl shadow-black 
-          sm:rounded-full sm:h-50 sm:w-25
-          '/>
-        </Tilt>
-      </div> */}
+      <h3 className='tracking-[20px] uppercase absolute top-24 text-3xl
+      md:top-20 sm:top-5 font-bold text-[#F94C10] shadow-2xl shadow-orange-500 hover:-skew-y-3'>about</h3>
 
       <div className='flex-shrink-0 mt-5 -translate-y-20 justify-center'>        
         <Tilt className=' h-[350px] w-[300px] bg-transparent '>
