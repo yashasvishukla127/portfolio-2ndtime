@@ -13,11 +13,11 @@ const Projects = (props: Props) => {
         
         <h3 className='text-4xl font-extrabold absolute top-24 tracking-[12px] text-[#161A30]'> PROJECTS</h3>
 
-        <div className='w-full flex absolute space-x-5 overflow-x-scroll p-10 snap-x snap-mandatory'>
-            <motion.div className='flex-none'
+        <div className='w-full flex  absolute space-x-5 overflow-x-scroll p-10 snap-x snap-mandatory top-[30%]'>
+            <motion.div className='flex-none '
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }} >  
-                <ProjectCard name="modernrestaurant" 
+                <ProjectCard name="restaurant landing page" 
                 link="https://yashasvishukla127.github.io/restaurantwebsite/" 
                 image="/laurels2.jpg" tech1="react" tech2="js" tech3="css" 
                 tech1img={"/react.svg"} tech2img={"/js.svg"} tech3img={"/css.png"}
