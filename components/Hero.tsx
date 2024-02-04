@@ -41,7 +41,7 @@ const Hero = (props: Props) => {
                 <Cursor cursorColor= "#3876BF" />
             </h2>
 
-                                                {/* this button changes are in GLOBALL.CSS  */}
+                                                {/* these button changes are in GLOBALL.CSS  */}
             <div className='pt-5 translate-y-40 text-[#8bb2c5] flex space-x-2'>
                     <Link href= '#about'>   <button className='heroButton shadow-blue-800 shadow-2xl items-center before:ease relative flex h-14 w-40  overflow-hidden border-6 
                      bg-transparent font-bold text-orange-600 shadow-2xl transition-all duration-300 before:absolute before:inset-0 before:border-12

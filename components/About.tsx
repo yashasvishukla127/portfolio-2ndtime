@@ -16,16 +16,31 @@ const About = (props: Props) => {
    <>
     <div className='h-screen flex flex-col relative text-center md:text-left md:flex-row
     max-w-7xl px-10 mx-auto justify-evenly items-center space-y-8  md:space-y-0'>
-      <h3 className='tracking-[20px] uppercase text-blue-800 absolute top-24 text-2xl
+      <h3 className='tracking-[20px] uppercase text-blue-800 absolute top-24 text-3xl
       md:top-20 sm:top-5 font-bold shadow-blue-800 shadow-lg hover:-skew-y-3'>about</h3>
 
       
-        <Image src={programmer} alt='programer'
-        width={400} height={500}
-        className='blur-[1px] grayscale hover:grayscale-0 hover:blur-0 -skew-y-3 hover:skew-y-3'/>
+       {/* <div className='flex-shrink-0 '>        
+        <Tilt className=' h-[350px] w-[300px] bg-transparent '>
+          <Image src={programmer} alt='programer'
+           height={400}  width={300} 
+          className='blur-[1px] grayscale-0 py-10 object-fill hover:grayscale hover:blur-0 shadow-2xl shadow-black 
+          sm:rounded-full sm:h-50 sm:w-25
+          '/>
+        </Tilt>
+      </div> */}
 
-        
+      <div className='flex-shrink-0 mt-5 translate-y-20 justify-center'>        
+        <Tilt className=' h-[350px] w-[300px] bg-transparent '>
+          <img src='/programmer.jpg' alt='programer'
+          className='sm:rounded-full  flex-shrink-0 object-cover
+          sm:h-45 sm:w-40  -mb-20
+          md:h-80 md:w-80 md:rounded-none
+          lg:h-120 lg:w-120 
+          xl:h-[500px] xl:w-[600px] xl:-translate-y-40 '/>
 
+        </Tilt>
+      </div>
 
       <div className='space-y-10 px-0 md:px-10'>
         <h4 className=' text-pretty uppercase tracking-[20px] text-4xl font-extrabold
@@ -47,11 +62,7 @@ const About = (props: Props) => {
         I am eager to leverage my skills and enthusiasm to contribute meaningfully to challenging web development endeavors, 
         ensuring excellence and user satisfaction at every step.
         </p>
-        <Tilt className=' h-[400px] w-[400px] bg-black'>
-          <Image src={programmer} alt='programer'
-          width={400} height={400}
-          className='blur-[1px] grayscale hover:grayscale-0 hover:blur-0 -skew-y-3 hover:skew-y-3'/>
-        </Tilt>
+        
         
 
       </div>
