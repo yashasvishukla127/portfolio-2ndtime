@@ -4,3 +4,5 @@ translate-y-8 for moving element in y axis 8 rem
 
 top-24 { upar se 24 pixels}
 top-[20%] {thodi jyada matra me}
+
+text center for text <Projects.tsx>
