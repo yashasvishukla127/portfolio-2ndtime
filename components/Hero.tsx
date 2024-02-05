@@ -3,6 +3,7 @@ import React from 'react'
 import { Cursor ,useTypewriter } from 'react-simple-typewriter'
 import Link from 'next/link'
 import Image from 'next/image'
+import {motion} from 'framer-motion'
 
 import BackgroundCircles from './BackgroundCircles'
 import clgstudent from '@/public/clgStuDe.jpg'
@@ -42,31 +43,64 @@ const Hero = (props: Props) => {
             </h2>
 
                                                 {/* these button changes are in GLOBALL.CSS  */}
-            <div className='pt-5 translate-y-40 text-[#8bb2c5] flex space-x-2'>
-                    <Link href= '#about'>   <button className='heroButton shadow-blue-800 shadow-2xl items-center before:ease relative flex h-14 w-40  overflow-hidden border-6 
-                     bg-transparent font-bold text-orange-600 shadow-2xl transition-all duration-300 before:absolute before:inset-0 before:border-12
-                      before:border-[#FC6736] before:duration-100 before:ease-linear  hover:text-white hover:shadow-orange-800 
-                      hover:before:border-[80px]  px-[30%] ' >
-                         <span className='relative z-10 hover:-translate-y-2'> About</span></button>  
+            <div className='pt-5 translate-y-40 text-[#8bb2c5] flex space-x-10'>
+                    <Link href= '#about'>   <motion.button initial={{ opacity: 0.6 }}
+                        whileHover={{
+                          scale: 1.1,
+                          transition: { duration: 0.2 },
+                        }}
+                        whileTap={{ scale: 0.5 }}
+                        whileInView={{ opacity: 1 }}
+                        className=" heroButton shadow-blue-700 shadow-2xl before:ease relative flex h-14 w-40  overflow-hidden border-6 
+                     bg-transparent font-bold text-[#4E4FEB] transition-all duration-300 before:absolute before:inset-0 before:border-12
+                      before:border-[#4E4FEB] before:duration-100 before:ease-linear   hover:text-white hover:shadow-black items-center justify-center
+                      hover:before:border-[80px]">
+                        <span className="relative z-10 text-center">about</span>
+                        </motion.button>    
                     </Link>
                       
-                    <Link href= '#projects'> <button className='heroButton  shadow-blue-800 shadow-2xl before:ease relative flex h-14 w-40  overflow-hidden border-6 
-                     bg-transparent font-bold text-orange-600 shadow-2xl transition-all duration-300 before:absolute before:inset-0 before:border-12
-                      before:border-[#FC6736] before:duration-100 before:ease-linear  hover:text-white hover:shadow-orange-800 
-                      hover:before:border-[80px]'><span className='relative z-10 px-2 hover:-translate-y-2'> Projects</span></button>  </Link>
-
-
-                    <Link href= '#skills'> <button className='heroButton  shadow-blue-800 shadow-2xl before:ease relative flex h-14 w-40  overflow-hidden border-6 
-                     bg-transparent font-bold text-orange-600 shadow-2xl transition-all duration-300 before:absolute before:inset-0 before:border-12
-                      before:border-[#FC6736] before:duration-100 before:ease-linear  hover:text-white hover:shadow-orange-800 
-                      hover:before:border-[80px] '><span className='relative z-10 px-6 hover:-translate-y-2'> Skills</span></button> </Link>
-
-                    <Link href= '#experience'> <button className=" heroButton shadow-blue-800 shadow-2xl before:ease relative flex h-14 w-40  overflow-hidden border-6 
-                     bg-transparent font-bold text-orange-600 shadow-2xl transition-all duration-300 before:absolute before:inset-0 before:border-12
-                      before:border-[#FC6736] before:duration-100 before:ease-linear  hover:text-white hover:shadow-orange-800 
+                    <Link href= '#projects'> <motion.button initial={{ opacity: 0.6 }}
+                        whileHover={{
+                          scale: 1.1,
+                          transition: { duration: 0.2 },
+                        }}
+                        whileTap={{ scale: 0.5 }}
+                        whileInView={{ opacity: 1 }}
+                        className=" heroButton shadow-blue-700 shadow-2xl before:ease relative flex h-14 w-40  overflow-hidden border-6 
+                     bg-transparent font-bold text-[#4E4FEB] transition-all duration-300 before:absolute before:inset-0 before:border-12
+                      before:border-[#4E4FEB] before:duration-100 before:ease-linear   hover:text-white hover:shadow-black items-center justify-center
                       hover:before:border-[80px]">
-                        <span className="relative z-10 hover:-translate-y-2">experience</span>
-                        </button>  
+                        <span className="relative z-10 text-center">projects</span>
+                        </motion.button>   </Link>
+
+
+                    <Link href= '#skills'> <motion.button initial={{ opacity: 0.6 }}
+                        whileHover={{
+                          scale: 1.1,
+                          transition: { duration: 0.2 },
+                        }}
+                        whileTap={{ scale: 0.5 }}
+                        whileInView={{ opacity: 1 }}
+                        className=" heroButton shadow-blue-700 shadow-2xl before:ease relative flex h-14 w-40  overflow-hidden border-6 
+                     bg-transparent font-bold text-[#4E4FEB] transition-all duration-300 before:absolute before:inset-0 before:border-12
+                      before:border-[#4E4FEB] before:duration-100 before:ease-linear   hover:text-white hover:shadow-black items-center justify-center
+                      hover:before:border-[80px]">
+                        <span className="relative z-10 text-center">skills</span>
+                        </motion.button>   </Link>
+
+                    <Link href= '#experience'> <motion.button initial={{ opacity: 0.6 }}
+                        whileHover={{
+                          scale: 1.1,
+                          transition: { duration: 0.2 },
+                        }}
+                        whileTap={{ scale: 0.5 }}
+                        whileInView={{ opacity: 1 }}
+                        className=" heroButton shadow-blue-700 shadow-2xl before:ease relative flex h-14 w-40  overflow-hidden border-6 
+                     bg-transparent font-bold text-[#4E4FEB] transition-all duration-300 before:absolute before:inset-0 before:border-12
+                      before:border-[#4E4FEB] before:duration-100 before:ease-linear   hover:text-white hover:shadow-black items-center justify-center
+                      hover:before:border-[80px]">
+                        <span className="relative z-10 text-center">experience</span>
+                        </motion.button>  
                     </Link>
                     
             </div>
