@@ -6,6 +6,7 @@ import ExperienceReact from "@/components/ExperienceReact";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Projects from "@/components/Projects";
+import Skills from "@/components/Skills";
 
 
 export default function Home() {
@@ -28,13 +29,17 @@ export default function Home() {
       <section id="projects" className="snap-start">
         <Projects/>
       </section>
-    
+      
+      <section id="skills" className="snap-start">
+          <Skills/>
+        </section>
 
       <section id="experience" className="snap-center">
         <ExperienceReact/>
       </section>
-
-      {/* in project section use scroll snap align */}
+      
+      
+      
      
     </>
   );

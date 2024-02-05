@@ -13,7 +13,7 @@ const About = (props: Props) => {
     <div className='h-screen flex flex-col relative text-center md:text-left md:flex-row
     max-w-7xl px-10 mx-auto justify-evenly items-center space-y-8  md:space-y-0'>
       <h3 className='tracking-[20px] uppercase absolute top-24 text-3xl
-      md:top-20 sm:top-5 font-bold text-[#F94C10] shadow-2xl shadow-orange-500 hover:-skew-y-3'>about</h3>
+      md:top-20 sm:top-5 font-bold text-[#525CEB] shadow-[#0766AD] shadow-2xl hover:-skew-y-3'>about</h3>
 
       <div className='flex-shrink-0 mt-5 -translate-y-20 justify-center'>        
         <Tilt className=' h-[350px] w-[300px] bg-transparent '>

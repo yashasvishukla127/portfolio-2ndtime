@@ -2,6 +2,7 @@ import React from 'react'
 import { motion,useScroll } from 'framer-motion';
 import { useRef } from 'react';
 import LiIcon from './LiIcon';
+import AnimatedText from '@/assets/AnimatedText';
 
 const Details = ({position , company , time , work}) => {
     const ref = useRef(null);
@@ -13,7 +14,7 @@ const Details = ({position , company , time , work}) => {
         whileInView={{x:0}}
         transition={{duration:0.5,type:"spring"}}
         >
-            <h3 className='capitalize font-extrabold font-bold text-2xl text-[#0C2D57]'>
+            <h3 className='capitalize font-extrabold text-2xl text-[#0C2D57]'>
                 {position}&nbsp;
                 <span className='font-sans text-3xl font-medium uppercase text-[#FC6736]'> @{company}</span>
                 <p className='capitalize text-[15px]  font-semibold text-black/75' >{time}</p>
@@ -46,6 +47,10 @@ const ExperienceReact = () => {
           opacity:1,
         }}
       className='absolute top-24 right-100 uppercase tracking-[20px] text-gray-500 text-5xl '>experience...</motion.h3>
+
+      <div className='absolute top-10 right-100 uppercase tracking-[20px] text-gray-500 text-5xl '>
+        <AnimatedText className=' tracking-[12px] text-[#525CEB] shadow-[#0766AD] shadow-2xl' text="Experience"/>
+      </div>
         
         <div ref={ref} className='z-10 mx-auto relative mt-32 justify-center left-[4%]'>
            <motion.div style={{scaleY:scrollYProgress}}
