@@ -24,11 +24,11 @@ export default function Home() {
         <Hero/>
       </section>
 
-      <section id='about' className='snap-start'>
+      <section id='about' className='snap-start  '>
         <About/>
       </section>
 
-      <section id="projects" className="snap-start">
+      <section id="projects" className="snap-start" style={{height:"1200px"}}>
         <Projects/>
       </section>
       
