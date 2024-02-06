@@ -60,12 +60,16 @@ const ProjectShowcase: React.FC<ProjectCardProps> = ({
   };
 
   return (
+  <div className="hover:opacity-100 opacity-90
+  transition-opacity duration-500">
+      
+    
     <motion.article
       initial={{ x: -200, opacity: 0 }}
       transition={{ duration: 0.8 }}
       whileInView={{ x: 0, opacity: 1 }}
       className="snap-center  rounded-lg items-center space-y-7 flex-shrink-0 w-[400px] md:w-[500px] xl:w-[650px] 
-          overflow-hidden relative bg-slate-700 "
+          overflow-hidden relative bg-slate-700  "
     >
       <div className="flex flex-col relative left-[45%] ">
         <div className="relative group" style={{ height: 550 }}>
@@ -81,8 +85,7 @@ const ProjectShowcase: React.FC<ProjectCardProps> = ({
               src={image}
               alt={name}
             />
-            {/* <h3 className='opacity-0 group-hover:opacity-100 transition-opacity duration-300
-              relative top-60 left-[20%] transform  text-3xl font-bold text-[#1F2544] '>CLICK ME!</h3> */}
+
             <div className="relative top-60 left-[20%] ">
               <DrawOutlineButton>click for live app</DrawOutlineButton>
             </div>
@@ -119,7 +122,8 @@ const ProjectShowcase: React.FC<ProjectCardProps> = ({
       <p className="text-center font-bold absolute top-20 left-5 w-[280px] uppercase text-black ">
         {data}
       </p>
-    </motion.article>
+      </motion.article>
+  </div>     
   );
 };
 
