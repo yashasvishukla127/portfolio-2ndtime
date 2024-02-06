@@ -82,13 +82,13 @@ const Hero = (props: Props) => {
                         whileTap={{ scale: 0.5 }}
                         whileInView={{ opacity: 1 }}
                         className=" heroButton shadow-blue-700 shadow-2xl before:ease relative flex h-14 w-40  overflow-hidden border-6 
-                     bg-transparent font-bold text-[#4E4FEB] transition-all duration-300 before:absolute before:inset-0 before:border-12
-                      before:border-[#4E4FEB] before:duration-100 before:ease-linear   hover:text-white hover:shadow-black items-center justify-center
-                      hover:before:border-[80px]">
+                           bg-transparent font-bold text-[#4E4FEB] transition-all duration-300 before:absolute before:inset-0 before:border-12
+                           before:border-[#4E4FEB] before:duration-100 before:ease-linear   hover:text-white hover:shadow-black items-center justify-center
+                          hover:before:border-[80px]">
                         <span className="relative z-10 text-center">skills</span>
                         </motion.button>   </Link>
 
-                    <Link href= '#experience'> <motion.button initial={{ opacity: 0.6 }}
+                       <Link href= '#experience'> <motion.button initial={{ opacity: 0.6 }}
                         whileHover={{
                           scale: 1.1,
                           transition: { duration: 0.2 },
@@ -96,13 +96,14 @@ const Hero = (props: Props) => {
                         whileTap={{ scale: 0.5 }}
                         whileInView={{ opacity: 1 }}
                         className=" heroButton shadow-blue-700 shadow-2xl before:ease relative flex h-14 w-40  overflow-hidden border-6 
-                     bg-transparent font-bold text-[#4E4FEB] transition-all duration-300 before:absolute before:inset-0 before:border-12
-                      before:border-[#4E4FEB] before:duration-100 before:ease-linear   hover:text-white hover:shadow-black items-center justify-center
-                      hover:before:border-[80px]">
-                        <span className="relative z-10 text-center">experience</span>
+                          bg-transparent font-bold text-[#4E4FEB] transition-all duration-300 before:absolute before:inset-0 before:border-12
+                        before:border-[#4E4FEB] before:duration-100 before:ease-linear   hover:text-white hover:shadow-black items-center justify-center
+                          hover:before:border-[80px] ">
+                          <span className="relative z-10 text-center">experience</span>
                         </motion.button>  
-                    </Link>
-                    
+                      </Link>
+      
+    
             </div>
         </div>    
 

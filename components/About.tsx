@@ -10,7 +10,10 @@ type Props = {}
 const About = (props: Props) => {
   return (
    <>
-    <div className='h-screen flex flex-col relative text-center md:text-left md:flex-row
+    <motion.div
+      initial={{x:-200,opacity:0,}}
+      transition={{duration:0.8 ,type:'spring' , stiffness:100}}whileInView={{x:0,opacity:1,}}
+     className='h-screen flex flex-col relative text-center md:text-left md:flex-row
     max-w-7xl px-10 mx-auto justify-evenly items-center space-y-8  md:space-y-0'>
       <h3 className='tracking-[20px] uppercase absolute top-24 text-3xl
       md:top-20 sm:top-5 font-bold text-[#525CEB] shadow-[#0766AD] shadow-2xl hover:-skew-y-3'>about</h3>
@@ -61,7 +64,7 @@ const About = (props: Props) => {
         
       </div>
 
-    </div>
+    </motion.div>
   </>   
   )
 }

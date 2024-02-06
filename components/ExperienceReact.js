@@ -34,7 +34,7 @@ const ExperienceReact = () => {
     })  
   return (
     <div   className=' my-64 h-screen relative flex flex-col  text-left 
-    md:flex-row max-w-full z-0 justify-evenly items-center'>
+    md:flex-row max-w-full z-0 justify-center items-center'>
       <motion.h3 initial={{
           x:-200,
           opacity:0,
@@ -46,11 +46,9 @@ const ExperienceReact = () => {
           x:0,
           opacity:1,
         }}
-      className='absolute top-24 right-100 uppercase tracking-[20px] text-gray-500 text-5xl '>experience...</motion.h3>
+      className='absolute top-24 right-100 font-bold uppercase tracking-[25px] text-[#525CEB] shadow-[#0766AD] shadow-2xl text-5xl '>experience...</motion.h3>
 
-      <div className='absolute top-10 right-100 uppercase tracking-[20px] text-gray-500 text-5xl '>
-        <AnimatedText className=' tracking-[12px] text-[#525CEB] shadow-[#0766AD] shadow-2xl' text="Experience"/>
-      </div>
+
         
         <div ref={ref} className='z-10 mx-auto relative mt-32 justify-center left-[4%]'>
            <motion.div style={{scaleY:scrollYProgress}}
