@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { Tilt } from "react-tilt";
+import { SocialIcon } from "react-social-icons";
 
 interface ProjectCardProps {
   name: string;
@@ -40,7 +41,7 @@ const ProjectShowcase: React.FC<ProjectCardProps> = ({
     return (
       <button
         {...rest}
-        className="group relative px-4 py-2 font-bold text-black transition-colors duration-[400ms] hover:text-[#610C9F]"
+        className="group relative px-4 py-2  font-extrabold uppercase text-black transition-colors duration-[400ms] hover:text-yellow-500"
       >
         <span>{children}</span>
 
@@ -87,13 +88,28 @@ const ProjectShowcase: React.FC<ProjectCardProps> = ({
             />
 
             <div className="relative top-60 left-[20%] ">
-              <DrawOutlineButton>click for live app</DrawOutlineButton>
+              <DrawOutlineButton>click on image</DrawOutlineButton>
             </div>
           </Link>
         </div>
 
-        <div className="px-0 md:px-10 relative top-1 left-[15%] ">
-          <div className="flex space-x-5 my-10">
+        <div className="px-0 md:px-10 relative top-10 right-[50%] flex flex-col items-center  space-x-[350px] ">
+          
+          <button className="rounded-xl border-2 border-dashed border-black bg-slate-800 px-6 
+              py-3 font-semibold uppercase text-black transition-all duration-300 hover:translate-x-[-4px]
+              hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_black] active:translate-x-[0px]
+              active:translate-y-[0px] active:rounded-2xl active:shadow-none h-10 w-45 absolute left-10">
+            <SocialIcon url='https://github.com/yashasvishukla127/portfolio-2ndtime.git'
+            fgColor='#6e5494' bgColor='transparent'
+            className='hover:cursor-pointer hover:scale-150 transition-transform duration-300 relative bottom-5 right-5' />
+              <span className="font-extrabold uppercase text-black transition-colors duration-[400ms]
+             hover:text-yellow-500 relative bottom-5 right-3"> visit repo </span>  
+          </button>  
+            
+            
+          
+      
+          <div className="flex space-x-5 my-10 translate-y-[-40px]">
             <Image
               src={tech1img}
               width={30}
@@ -116,6 +132,10 @@ const ProjectShowcase: React.FC<ProjectCardProps> = ({
               className="hover:scale-110 transition-transform duration-300"
             />
           </div>
+          
+          
+            
+
         </div>
       </div>
 
