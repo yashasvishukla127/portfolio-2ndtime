@@ -6,3 +6,14 @@ top-24 { upar se 24 pixels}
 top-[20%] {thodi jyada matra me}
 
 text center for text <Projects.tsx>
+
+!bg-red  this is helpful for any class previously defined but to choose this over previusly defined 
+for e.g in <project > section <project card> is beging rended and bg-white is defined after using 
+!bgred in <project > section bg-red would be given priority
+
+animatedtext.tsx
+    -<h1> className={`${className}`}    by using this 
+index.tsx
+    <animatedtext className=''/>    className could be used here too
+
+    width: "calc(50% - 100px)"-> to decrease the size of right width GREAT FEATURE

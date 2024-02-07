@@ -3,11 +3,44 @@ import React from 'react'
 import {motion} from "framer-motion"
 import {Tilt} from 'react-tilt'
 
-
+interface ProjectCardProps {
+  children?: React.ReactNode;
+}
 
 type Props = {}
 
 const About = (props: Props) => {
+
+  const DrawOutlineButton = ({
+    children,
+    ...rest
+  }: React.DetailedHTMLProps<
+    React.ButtonHTMLAttributes<HTMLButtonElement>,
+    HTMLButtonElement
+  >) => {
+    return (
+      <button
+        {...rest}
+        className="group relative px-4 py-2  font-extrabold uppercase text-black transition-colors duration-[400ms] hover:text-yellow-500"
+      >
+        <span className='text-4xl font-extrabold
+         shadow-black shadow-2xl tracking-[10px]'>{children}</span>
+
+        {/* TOP */}
+        <span className="absolute left-0 top-0 h-[4px] w-0 bg-[#22092C] transition-all duration-100 group-hover:w-full" />
+
+        {/* RIGHT */}
+        <span className="absolute right-0 top-0 h-0 w-[4px] bg-[#22092C] transition-all delay-100 duration-100 group-hover:h-full" />
+
+        {/* BOTTOM */}
+        <span className="absolute bottom-0 right-0 h-[4px] w-0 bg-[#22092C] transition-all delay-200 duration-100 group-hover:w-full" />
+
+        {/* LEFT */}
+        <span className="absolute bottom-0 left-0 h-0 w-[4px] bg-[#22092C] transition-all delay-300 duration-100 group-hover:h-full" />
+      </button>
+    );
+  };
+
   return (
    <>
     <motion.div
@@ -41,10 +74,14 @@ const About = (props: Props) => {
         </Tilt>
       </div>
 
-      <div className='space-y-10 px-0 md:px-10'>
-        <h4 className=' text-pretty uppercase tracking-[20px] text-4xl font-extrabold
-         shadow-black shadow-lg hover:-skew-y-3 text-[#161A30] '>
-           here is a   <span className='underline'>little</span> BACKGROUND</h4>
+      <div className='space-y-10 px-0 md:px-10 ' >
+        {/* <h4 className=' text-pretty uppercase tracking-[20px] text-4xl font-extrabold
+         shadow-black shadow-lg  text-[#161A30] '>
+            here is a   <span className='underline'>little</span> BACKGROUND</h4>
+           */}
+          <DrawOutlineButton> </DrawOutlineButton>
+          <DrawOutlineButton>HERE IS little BACKGROUND</DrawOutlineButton>
+         
 
         <p className='tracking-[1px] text-slate-950 uppercase text- font-serif'>
         Greetings,I am a dedicated web developer proficient in a comprehensive range of technologies 
