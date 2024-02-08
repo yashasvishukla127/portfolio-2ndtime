@@ -32,7 +32,7 @@ const Hero = (props: Props) => {
         
             <BackgroundCircles />  
             <Image className='h-32 w-32 relative rounded-full object-cover top-20 mx-auto 
-            translate-y-[70px] blur-[1px] grayscale hover:grayscale-0 hover:blur-0' src= {clgstudent} alt='yash'/>
+            translate-y-[70px] blur-[1px] grayscale-[50%] hover:grayscale-0 hover:blur-0' src= {clgstudent} alt='yash'/>
         </div>
 
 
@@ -51,9 +51,9 @@ const Hero = (props: Props) => {
                         }}
                         whileTap={{ scale: 0.5 }}
                         whileInView={{ opacity: 1 }}
-                        className=" heroButton shadow-blue-700 shadow-2xl before:ease relative flex h-14 w-40  overflow-hidden border-6 
-                     bg-transparent font-bold text-[#4E4FEB] transition-all duration-300 before:absolute before:inset-0 before:border-12
-                      before:border-[#4E4FEB] before:duration-100 before:ease-linear   hover:text-white hover:shadow-black items-center justify-center
+                        className=" heroButton text-indigo-900 shadow-indigo-900  shadow-2xl before:ease relative flex h-14 w-40  overflow-hidden border-6 
+                     bg-transparent font-bold  transition-all duration-300 before:absolute before:inset-0 before:border-12
+                      before:border-indigo-800 before:duration-100 before:ease-linear   hover:text-white hover:shadow-black items-center justify-center
                       hover:before:border-[80px]">
                         <span className="relative z-10 text-center">about</span>
                         </motion.button>    
@@ -66,9 +66,9 @@ const Hero = (props: Props) => {
                         }}
                         whileTap={{ scale: 0.5 }}
                         whileInView={{ opacity: 1 }}
-                        className=" heroButton shadow-blue-700 shadow-2xl before:ease relative flex h-14 w-40  overflow-hidden border-6 
-                     bg-transparent font-bold text-[#4E4FEB] transition-all duration-300 before:absolute before:inset-0 before:border-12
-                      before:border-[#4E4FEB] before:duration-100 before:ease-linear   hover:text-white hover:shadow-black items-center justify-center
+                        className=" heroButton text-indigo-900 shadow-indigo-900  shadow-2xl before:ease relative flex h-14 w-40  overflow-hidden border-6 
+                       bg-transparent font-bold  transition-all duration-300 before:absolute before:inset-0 before:border-12
+                      before:border-indigo-800 before:duration-100 before:ease-linear   hover:text-white hover:shadow-black items-center justify-center
                       hover:before:border-[80px]">
                         <span className="relative z-10 text-center">projects</span>
                         </motion.button>   </Link>
@@ -81,9 +81,9 @@ const Hero = (props: Props) => {
                         }}
                         whileTap={{ scale: 0.5 }}
                         whileInView={{ opacity: 1 }}
-                        className=" heroButton shadow-blue-700 shadow-2xl before:ease relative flex h-14 w-40  overflow-hidden border-6 
-                           bg-transparent font-bold text-[#4E4FEB] transition-all duration-300 before:absolute before:inset-0 before:border-12
-                           before:border-[#4E4FEB] before:duration-100 before:ease-linear   hover:text-white hover:shadow-black items-center justify-center
+                        className=" heroButton text-indigo-900 shadow-indigo-900 shadow-2xl before:ease relative flex h-14 w-40  overflow-hidden border-6 
+                           bg-transparent font-bold  transition-all duration-300 before:absolute before:inset-0 before:border-12
+                           before:border-indigo-800 before:duration-100 before:ease-linear   hover:text-white hover:shadow-black items-center justify-center
                           hover:before:border-[80px]">
                         <span className="relative z-10 text-center">skills</span>
                         </motion.button>   </Link>
@@ -95,9 +95,9 @@ const Hero = (props: Props) => {
                         }}
                         whileTap={{ scale: 0.5 }}
                         whileInView={{ opacity: 1 }}
-                        className=" heroButton shadow-blue-700 shadow-2xl before:ease relative flex h-14 w-40  overflow-hidden border-6 
-                          bg-transparent font-bold text-[#4E4FEB] transition-all duration-300 before:absolute before:inset-0 before:border-12
-                        before:border-[#4E4FEB] before:duration-100 before:ease-linear   hover:text-white hover:shadow-black items-center justify-center
+                        className=" heroButton text-indigo-900 shadow-indigo-900 shadow-2xl before:ease relative flex h-14 w-40  overflow-hidden border-6 
+                          bg-transparent font-bold  transition-all duration-300 before:absolute before:inset-0 before:border-12
+                        before:border-indigo-800 before:duration-100 before:ease-linear   hover:text-white hover:shadow-black items-center justify-center
                           hover:before:border-[80px] ">
                           <span className="relative z-10 text-center">experience</span>
                         </motion.button>  

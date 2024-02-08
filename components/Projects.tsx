@@ -16,7 +16,7 @@ const Projects = (props: Props) => {
     >
       {/* <h3 className='text-4xl font-extrabold absolute top-24 tracking-[12px] text-[#F94C10] shadow-2xl shadow-orange-500'> PROJECTS</h3> */}
       <AnimatedText
-        className="text-[#525CEB] shadow-[#0766AD] shadow-2xl tracking-[25px]"
+        className="text-indigo-950 shadow-[#0766AD] shadow-2xl tracking-[25px]"
         text="PROJECTS"
       />
       <div className="w-full flex  absolute space-x-5 overflow-x-scroll p-10 snap-x snap-mandatory top-[30%] mb-7  ">

@@ -49,7 +49,7 @@ const About = (props: Props) => {
      className='h-screen flex flex-col relative text-center md:text-left md:flex-row
     max-w-7xl px-10 mx-auto justify-evenly items-center space-y-8  md:space-y-0'>
       <h3 className='tracking-[20px] uppercase absolute top-24 text-3xl
-      md:top-20 sm:top-5 font-bold text-[#525CEB] shadow-[#0766AD] shadow-2xl hover:-skew-y-3'>about</h3>
+      md:top-20 sm:top-5 font-bold text-indigo-900 shadow-indigo-900  shadow-2xl hover:-skew-y-3'>about</h3>
 
       <div className='flex-shrink-0 mt-5 -translate-y-20 justify-center'>        
         <Tilt className=' h-[350px] w-[300px] bg-transparent '>
@@ -79,7 +79,7 @@ const About = (props: Props) => {
          shadow-black shadow-lg  text-[#161A30] '>
             here is a   <span className='underline'>little</span> BACKGROUND</h4>
            */}
-          <DrawOutlineButton> </DrawOutlineButton>
+         
           <DrawOutlineButton>HERE IS little BACKGROUND</DrawOutlineButton>
          
 

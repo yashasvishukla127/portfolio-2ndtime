@@ -33,8 +33,8 @@ const ExperienceReact = () => {
       offset:['start end','center start']
     })  
   return (
-    <div   className=' my-64 h-screen relative flex flex-col  text-left 
-    md:flex-row max-w-full z-0 justify-center items-center'>
+    <div   className=' my-64 h-[1000px] relative flex flex-col  text-left 
+    md:flex-row max-w-full z-0 justify-center items-center space-y-100'>
       <motion.h3 initial={{
           x:-200,
           opacity:0,
@@ -46,7 +46,7 @@ const ExperienceReact = () => {
           x:0,
           opacity:1,
         }}
-      className='absolute top-24 right-100 font-bold uppercase tracking-[25px] text-[#525CEB] shadow-[#0766AD] shadow-2xl text-5xl '>experience...</motion.h3>
+      className='absolute top-10 right-100 font-bold uppercase tracking-[25px] text-[#525CEB] shadow-[#0766AD] shadow-2xl text-5xl '>experience...</motion.h3>
 
 
         

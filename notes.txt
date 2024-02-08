@@ -16,4 +16,4 @@ animatedtext.tsx
 index.tsx
     <animatedtext className=''/>    className could be used here too
 
-    width: "calc(50% - 100px)"-> to decrease the size of right width GREAT FEATURE
+    width: "calc(50% - 100px)"-> to decrease the size of right width GREAT FEATUREnpm  run dev

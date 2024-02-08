@@ -14,8 +14,8 @@ const Skills = (props: Props) => {
       className="h-screen flex flex-col relative items-center justify-center "
     >
       <AnimatedText
-        className="text-[#525CEB] shadow-[#0766AD]  shadow-2xl font-bold uppercase tracking-[15px]"
-        text="Skills"
+        className="text-indigo-900 shadow-indigo-900  shadow-2xl font-bold uppercase tracking-[15px]"
+        text="Skills" 
       />
 
       {/* parent div of left and right side div */}
@@ -27,7 +27,7 @@ const Skills = (props: Props) => {
           style={{ width: "350px" }}
         >
           <AnimatedText
-            className="bottom-2 pt-[30%] text-[#0C2D57] tracking-[4px]"
+            className="bottom-2 pt-[30%] text-purple-900 tracking-[4px]"
             text="Crafting digital experiences that transcend functionality and embrace innovation"
           />
         </div>
@@ -54,9 +54,9 @@ const Skills = (props: Props) => {
             Skills
           </h3> */}
 
-          <h3 className="absolute top-36 left-0 uppercase tracking-[3px] text-gray-500 text-sm">
+          {/* <h3 className="absolute top-36 left-0 uppercase tracking-[3px] text-gray-500 text-sm">
             Hover over for currently skill proficiency
-          </h3>
+          </h3> */}
           <div className="grid grid-cols-3 gap-5 justify-center items-center text-center">
             <SkillCard source="/html.png" value="90" skill="HTML" />
             <SkillCard source="/css.png" value="90" skill="CSS" />

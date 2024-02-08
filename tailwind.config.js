@@ -6,7 +6,15 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
 ],
   theme: {
-    extend: {},
+    extend: {
+      grayscale: {
+        5: '5%',
+        10: '10%',
+        20: '20%',
+        30: '30%',
+        50: '50%',
+      }
+    },
   },
   plugins: [],
 }

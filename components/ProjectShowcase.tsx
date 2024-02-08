@@ -80,16 +80,16 @@ const ProjectShowcase: React.FC<ProjectCardProps> = ({
 
           <Link href={link} target="_blank" className="">
             <Image
-              className="object-cover absolute left-10 top-[15%] transition-transform duration-300 hover:scale-105 hover:blur-[2px]"
+              className="object-cover absolute left-10 top-[15%] transition-transform duration-300 hover:scale-105 hover:grayscale-[50%] hover:blur-[2px]"
               width={300}
               height={400}
               src={image}
               alt={name}
             />
 
-            <div className="relative top-60 left-[20%] ">
+            {/* <div className="relative top-60 left-[20%] ">
               <DrawOutlineButton>click on image</DrawOutlineButton>
-            </div>
+            </div> */}
           </Link>
         </div>
 
@@ -98,7 +98,7 @@ const ProjectShowcase: React.FC<ProjectCardProps> = ({
           <button className="rounded-xl border-2 border-dashed border-black bg-slate-800 px-6 
               py-3 font-semibold uppercase text-black transition-all duration-300 hover:translate-x-[-4px]
               hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_black] active:translate-x-[0px]
-              active:translate-y-[0px] active:rounded-2xl active:shadow-none h-10 w-45 absolute left-10">
+              active:translate-y-[0px] active:rounded-2xl active:shadow-none h-10 w-45 absolute left-10 mx-10">
             <SocialIcon url='https://github.com/yashasvishukla127/portfolio-2ndtime.git'
             fgColor='#6e5494' bgColor='transparent'
             className='hover:cursor-pointer hover:scale-150 transition-transform duration-300 relative bottom-5 right-5' />
