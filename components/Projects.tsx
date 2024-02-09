@@ -3,9 +3,17 @@ import { motion } from "framer-motion";
 import ProjectShowcase from "./ProjectShowcase";
 import AnimatedText from "@/assets/AnimatedText";
 
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
 type Props = {};
 
+
+
+
 const Projects = (props: Props) => {
+
+  
   return (
     <motion.div
       initial={{ x: -200, opacity: 0 }}

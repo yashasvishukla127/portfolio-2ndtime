@@ -10,7 +10,7 @@ type Props = {};
 function Header({}: Props) {
   return (
     <header className="fixed  h-[70px] flex items-start justify-between  mx-auto z-20 xl:items-center 
-     w-full mix-blend-difference backdrop:filter backdrop-blur-md ">
+     w-full   bg-zinc-600">
       <motion.div
         initial={{
           x: -500,

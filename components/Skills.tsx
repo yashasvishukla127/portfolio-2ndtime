@@ -3,7 +3,15 @@ import React from "react";
 import { motion } from "framer-motion";
 import SkillCard from "@/assets/SkillCard";
 
+interface ProjectCardProps {
+  children?: React.ReactNode;
+}
+
+
 type Props = {};
+
+
+
 
 const Skills = (props: Props) => {
   return (
@@ -22,7 +30,7 @@ const Skills = (props: Props) => {
       <div className="flex justify-center items-center max-w-screen-lg " >
 
         {/* flex left side */}
-        <div
+        <div data-scroll data-scroll-speed="0.3"
           className="absolute left-[15%] top-[20%]   "
           style={{ width: "350px" }}
         >
@@ -50,13 +58,7 @@ const Skills = (props: Props) => {
             xl:space-y-0 mx-auto items-center top-20 "
           style={{ left: "40%", width: "calc(50% - 100px)" }}
         >
-          {/* <h3 className="absolute top-24 left-0 uppercase tracking-[20px] text-black text-4xl">
-            Skills
-          </h3> */}
 
-          {/* <h3 className="absolute top-36 left-0 uppercase tracking-[3px] text-gray-500 text-sm">
-            Hover over for currently skill proficiency
-          </h3> */}
           <div className="grid grid-cols-3 gap-5 justify-center items-center text-center">
             <SkillCard source="/html.png" value="90" skill="HTML" />
             <SkillCard source="/css.png" value="90" skill="CSS" />

@@ -7,6 +7,7 @@ import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Projects from "@/components/Projects";
 import Skills from "@/components/Skills";
+import Footer from "@/components/Footer";
 import Skills2 from "@/components/Skill2";
 import ProjectShowcase from "@/components/ProjectShowcase";
 import ProjectsSec from "@/components/ProjectsSec";
@@ -28,7 +29,7 @@ export default function Home() {
         <About />
       </section>
 
-      <section
+      <section 
         id="projects"
         className="snap-start"
         style={{ height: "1200px" }}
@@ -52,6 +53,11 @@ export default function Home() {
       <section id="experience" className="snap-center">
         <ExperienceReact />
       </section>
+
+      <footer>
+        <Footer/>
+      </footer>
+
     </>
   );
 }
