@@ -34,7 +34,7 @@ const ExperienceReact = () => {
     })  
   return (
     <div   className=' my-64 h-[1000px] relative flex flex-col  text-left 
-    md:flex-row max-w-full z-0 justify-center items-center space-y-100'>
+    md:flex-row max-w-full z-0 justify-center items-center space-y-100   '>
       <motion.h3 initial={{
           x:-200,
           opacity:0,
