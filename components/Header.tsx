@@ -9,8 +9,8 @@ type Props = {};
 
 function Header({}: Props) {
   return (
-    <header className="fixed  h-[70px] flex items-start justify-between  mx-auto z-20 xl:items-center 
-     w-full   bg-zinc-600">
+    <header className="sticky  h-[70px] flex items-start justify-between  mx-auto z-20 xl:items-center 
+     w-full   ">
       <motion.div
         initial={{
           x: -500,
@@ -90,11 +90,11 @@ function Header({}: Props) {
           className="h-[35px] w-[250px]  group overflow-hidden  "
           // style={{ mixBlendMode: "difference" }}
         >
-          <p className="text-white text-[20px] font-bold cursor-pointer flex px-5 group-hover:mt-[-35px]  transition-all duration-5000">
+          <p className="text-black text-[20px] font-bold cursor-pointer flex px-5 group-hover:mt-[-35px]  transition-all duration-5000">
             Yashasvi &nbsp;
             <span className="sm:block hidden"> | Portfolio</span>
           </p>
-          <p className="text-white text-[20px] font-bold cursor-pointer top-1 relative flex px-5">
+          <p className="text-black text-[20px] font-bold cursor-pointer top-1 relative flex px-5">
             Yashasvi &nbsp;
             <span className="sm:block hidden"> | Portfolio</span>
           </p>
