@@ -24,9 +24,7 @@ const Details = ({position , company , time , work}) => {
     </li>
   }
 
-
 const ExperienceReact = () => {
-
     const ref = useRef(null);
     const{scrollYProgress} = useScroll({
       target:ref,
@@ -48,8 +46,6 @@ const ExperienceReact = () => {
         }}
       className='absolute top-10 right-100 font-bold uppercase tracking-[25px] text-[#525CEB] shadow-[#0766AD] shadow-2xl text-5xl '>experience...</motion.h3>
 
-
-        
         <div ref={ref} className='z-10 mx-auto relative mt-32 justify-center left-[4%]'>
            <motion.div style={{scaleY:scrollYProgress}}
            className='absolute   top-10 w-[5px] h-full  bg-indigo-950 origin-top left-[6%]' />
@@ -69,5 +65,4 @@ const ExperienceReact = () => {
     </div>
   )
 }
-
 export default ExperienceReact

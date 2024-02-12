@@ -62,7 +62,7 @@ const Projects = (props: Props) => {
             tech1img={"/next.svg"}
             tech2img={"/tailwind-css.svg"}
             tech3img={"/typescript.png"}
-            data="jan24-feb24"
+            data="leveraging the power of TypeScript and Next.js, alongside the seamless animation capabilities of Framer Motion, brings forth a robust and visually engaging user experience. Tailwind CSS further enhances the design process, allowing for rapid styling iterations and responsive layouts. it is modern, performant web application while maintaining code quality and scalability."
           />
         </motion.div>
 
@@ -72,16 +72,16 @@ const Projects = (props: Props) => {
           whileTap={{ scale: 0.95 }}
         >
           <ProjectShowcase
-            name="portfolio"
+            name="awwwards inspired website"
             link="https://portfolio-2ndtime-9az6yr2m4-yashasvi-shuklas-projects.vercel.app"
-            image="/programmer.jpg"
+            image="/chhapriAPE.jpg"
             tech1="next"
             tech2="tailwind"
             tech3="typescript"
             tech1img={"/next.svg"}
             tech2img={"/tailwind-css.svg"}
             tech3img={"/typescript.png"}
-            data="jan24-feb24"
+            data="BUILDING AN AWARDS INSPIRED WEBSITE WITH NEXT.JS AND TAILWIND CSS. VERY MODERN LOOK AND FUNCTIONALITY. INTEGRATING ANIMATIONS AND SCROLL TRIGGERS."
           />
         </motion.div>
       </div>
