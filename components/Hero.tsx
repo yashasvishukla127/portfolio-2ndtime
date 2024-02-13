@@ -23,7 +23,7 @@ const Hero = (props: Props) => {
         delaySpeed: 100,
     });
   return (
-    <div className='h-screen  flex flex-col space-y-10 items-center justify-center text-center overflow-hidden'>
+    <div className='h-[120vh]  flex flex-col space-y-10 items-center justify-center text-center overflow-hidden'>
         
         <div className='-translate-y-40'>
             <h1 className='uppercase text-3xl text-[#0f0f0f] pb-2 tracking-[15px]

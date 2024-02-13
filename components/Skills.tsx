@@ -55,7 +55,7 @@ const Skills = (props: Props) => {
           }}
           className=" flex relative flex-col text-center md:text-left
            xl:flex-row max-w-[2000px] xl:px-10 min-h-screen justify-center
-            xl:space-y-0 mx-auto items-center top-20 "
+            xl:space-y-0 mx-auto items-center top-40 "
           style={{ left: "40%", width: "calc(50% - 100px)" }}
         >
 

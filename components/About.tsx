@@ -80,7 +80,7 @@ const About = (props: Props) => {
             here is a   <span className='underline'>little</span> BACKGROUND</h4>
            */}
          
-          <DrawOutlineButton>HERE IS little BACKGROUND</DrawOutlineButton>
+          {/* <DrawOutlineButton>HERE IS little BACKGROUND</DrawOutlineButton> */}
          
 
         <p className='tracking-[1px] text-slate-950 uppercase text- font-serif'>

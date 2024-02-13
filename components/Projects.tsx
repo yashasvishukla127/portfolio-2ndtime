@@ -55,7 +55,7 @@ const Projects = (props: Props) => {
           <ProjectShowcase
             name="portfolio"
             link="https://portfolio-2ndtime-9az6yr2m4-yashasvi-shuklas-projects.vercel.app"
-            image="/programmer.jpg"
+            image="/coder (2).jpg"
             tech1="next"
             tech2="tailwind"
             tech3="typescript"

@@ -17,7 +17,7 @@ const Footer = (props: Props) => {
       </Link>
 
       <div>
-        <img src="/lightbulb.svg" className="h-[300px] w-auto absolute bottom-10 right-20" />
+        <img src="/lightbulb.svg" className="h-[200px] w-auto absolute bottom-10 right-20" />
       </div>
       
     </div>
