@@ -54,8 +54,8 @@ const ExperienceReact = () => {
             <ul className='w-full flex flex-col items-start justify-between ml-4  left-100'>
               <Details position="Freelancer" company="self-employed" time="2022-2023" work="worked on various projects as an react devlopers for clients and i"/>
               <Details position="Intern" company="Slash-Mark" time="feb24-may24" work="as an frontend intern worked on  react frontend technologies built projects on varius problem ."/>
-              <Details position="Intern" company="Slash-Mark" time="feb24-may24" work="as an frontend intern worked on  react frontend technologies built projects on varius problem ."/>
-              <Details position="Intern" company="Slash-Mark" time="feb24-may24" work="as an frontend intern worked on  react frontend technologies built projects on varius problem ."/>
+              <Details position="demo" company="xyz(demo)" time="feb24-may24" work="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut  ."/>
+              <Details position="demo" company="xyx(demo)" time="feb24-may24" work="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut ."/>
               
               
             </ul>
