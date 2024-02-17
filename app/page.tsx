@@ -11,7 +11,9 @@ import Footer from "@/components/Footer";
 import Skills2 from "@/components/Skill2";
 import ProjectShowcase from "@/components/ProjectShowcase";
 import ProjectsSec from "@/components/ProjectsSec";
-import Bubble from "../components/exper/Bubble";
+// import Bubble from "../components/exper/Bubble";
+import Bubble from "@/components/exper/Bubble";
+
 
 export default function Home() {
   return (
