@@ -11,6 +11,7 @@ import Footer from "@/components/Footer";
 import Skills2 from "@/components/Skill2";
 import ProjectShowcase from "@/components/ProjectShowcase";
 import ProjectsSec from "@/components/ProjectsSec";
+import Bubble from "../components/exper/bubble";
 
 export default function Home() {
   return (
@@ -21,12 +22,13 @@ export default function Home() {
 
       <Header />
 
-      <section id="hero" className="snap-start">
+      <section id="hero" className="snap-start ">
         <Hero />
       </section>
 
-      <section id="about" className="snap-start  ">
-        <About />
+      <section id="about" className="  ">
+        {/* <About /> */}
+        <Bubble/>
       </section>
 
       <section 
@@ -57,6 +59,8 @@ export default function Home() {
       <footer>
         <Footer/>
       </footer>
+
+      
 
     </>
   );

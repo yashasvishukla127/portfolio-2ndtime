@@ -49,7 +49,7 @@ const About = (props: Props) => {
      className='h-screen flex flex-col relative text-center md:text-left md:flex-row
     max-w-7xl px-10 mx-auto justify-evenly items-center space-y-8  md:space-y-0'>
       <h3 className='tracking-[20px] uppercase absolute top-24 text-3xl
-      md:top-20 sm:top-5 font-bold text-indigo-900 shadow-indigo-900  shadow-2xl hover:-skew-y-3'>about</h3>
+      md:top-20 sm:top-5 font-bold text-indigo-900 shadow-indigo-900  shadow-2xl '>about</h3>
 
       <div className='flex-shrink-0 mt-5 -translate-y-20 justify-center'>        
         <Tilt className=' h-[350px] w-[300px] bg-transparent '>

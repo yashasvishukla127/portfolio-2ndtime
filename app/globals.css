@@ -8,3 +8,7 @@
        transition-all  flex items-center justify-center
     }
   }
+  body{
+    background-color: hsl(0, 11%, 77%);
+    margin:0px
+  }

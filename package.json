@@ -19,7 +19,9 @@
     "react-parallax-tilt": "^1.7.209",
     "react-simple-typewriter": "^5.0.1",
     "react-social-icons": "^6.10.0",
-    "react-tilt": "^1.0.2"
+    "react-tilt": "^1.0.2",
+    "sass": "^1.71.0",
+    "scss": "^0.2.4"
   },
   "devDependencies": {
     "@types/node": "^20",
