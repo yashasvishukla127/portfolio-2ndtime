@@ -23,11 +23,14 @@ const Bubble = () => {
       >
         <p className='' onMouseEnter={() => setisHovered(true)}
           onMouseLeave={() => setisHovered(false)}>
-          I am confident that my hardworking nature, coupled with my passion for frontend development, will enable meaningful contributions to your team's success</p>
+          I am confident that my hardworking nature, coupled with my passion for
+          frontend development, will enable meaningful contributions to your team's success</p>
       </motion.div>
 
       <div className={Styles.body}>
-        <p> As a <span> passionate and skilled </span> web developer, I specialize in crafting high-quality designs for web pages that captivate audiences with their eye-catching beauty and functionality. </p>
+        <p> As a <span> passionate and skilled </span> web developer, I specialize in crafting
+          high-quality designs for web pages that captivate audiences with their eye-catching
+          beauty and functionality. </p>
 
       </div>
     </main>
