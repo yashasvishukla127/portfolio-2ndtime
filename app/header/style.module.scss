@@ -1,49 +1,53 @@
-.button{
-    position:fixed;
-    right:0;
-    margin:20px;
-    background-color: rgb(241, 49, 36);
-    height: 80px;
-    width: 80px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    z-index: 20;
+.header{
+    padding: 30px;
+    position: fixed;
+    right: 0;
+    z-index: 1;
 
-}
+    .button{
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        background-color: #455CE9;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
-.burger{
-    width:100%;
-    &::after , &::before{
-        content:"";
-        display: block;
-        width: 55%;
-        background-color: azure;
-        height:2px;
-        margin:auto;
-        position: relative;
-        transition: trasnform 2s ease-in-out;
+    .burger{
+        width: 100%;
+        &::after, &::before{
+            content: "";
+            display: block;
+            height: 1px;
+            width: 40%;
+            margin: auto;
+            background-color: white;
+            position: relative;
+            transition: transform 0.3s;
+        }
+
+        &::after{
+            top: -5px;
+        }
+
+        &::before{
+            top: 5px;
+        }
+    }
+
+    .burgerActive{
+
+        &::after{
+            transform: rotate(45deg);
+            top: -1px;
+        }
+
+        &::before{
+            transform: rotate(-45deg);
+            top: 0px;
+        }
         
     }
-
-    &::after{
-        top:-5px;
-    }
-    &::before{
-        top:5px;
-    }
 }
-
-.burgerActive{
-    &::after{
-        transform:rotate(-45deg);
-        top:-1px;
-    }
-    &::before{
-        top:0px;
-        transform:rotate(45deg);
-    }
-    }
-
