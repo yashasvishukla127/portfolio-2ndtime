@@ -17,3 +17,8 @@ index.tsx
     <animatedtext className=''/>    className could be used here too
 
     width: "calc(50% - 100px)"-> to decrease the size of right width GREAT FEATUREnpm  run dev
+
+
+
+    ERRORS / BUGS
+there was an error of deployment which was solved by doing changes in : .eslintrc.json

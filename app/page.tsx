@@ -11,13 +11,12 @@ import Footer from "@/components/Footer";
 import Skills2 from "@/components/Skill2";
 import ProjectShowcase from "@/components/ProjectShowcase";
 import ProjectsSec from "@/components/ProjectsSec";
-// import Bubble from "../components/exper/Bubble";
 import Bubble from "@/components/exper/Bubble";
 
 
 export default function Home() {
   return (
-    <>
+    <><main className=" snap-y snap-mandatory">
       <Head>
         <title> yash portfolio</title>
       </Head>
@@ -28,9 +27,8 @@ export default function Home() {
         <Hero />
       </section>
 
-      <section id="about" className="  ">
-        {/* <About /> */}
-        <Bubble/>
+      <section id="about" className=" snap-center ">
+        <Bubble/>       
       </section>
 
       <section 
@@ -43,8 +41,8 @@ export default function Home() {
 
       {/* expreiment section 
       <section id="projects" className="snap-start">
-        <ProjectsSec/>
-      </section> */}
+      <ProjectsSec/>
+    </section> */}
 
       <section id="skills" className="snap-start">
         <Skills />
@@ -64,6 +62,7 @@ export default function Home() {
 
       
 
+      </main>
     </>
   );
 }
