@@ -2,9 +2,7 @@ import styles from "./style.module.scss";
 import Link from "./link/index";
 import { motion } from "framer-motion";
 
-
 import { menuSlide } from "../anim";
-
 
 export default function Home() {
   const navItems = [
@@ -30,14 +28,19 @@ export default function Home() {
     },
   ];
   return (
-    <motion.div variants={menuSlide} animate="enter" initial="initial"  className={styles.menu}>
+    <motion.div
+      variants={menuSlide}
+      animate="enter"
+      initial="initial"
+      className={styles.menu}
+    >
       <div className={styles.body}>
         <div className={styles.nav}>
           <div className={styles.header}>
             <p> Navigation</p>
           </div>
           {navItems.map((item, index) => {
-            return <Link data={{ ...item, index }} />;
+            return <Link key={index} data={{ ...item, index }} />;
           })}
         </div>
       </div>
