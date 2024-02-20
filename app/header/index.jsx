@@ -3,7 +3,7 @@ import { useState } from "react";
 import Nav from "./nav/index";
 import {AnimatePresence, motion} from "framer-motion"
 
-export default function index() {
+export default function Home() {
   const [isActive, setIsActive] = useState(false);
   return (
     <>

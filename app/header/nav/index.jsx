@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import { menuSlide } from "../anim";
 
 
-export default function index() {
+export default function Home() {
   const navItems = [
     {
       title: "Home",
@@ -30,7 +30,7 @@ export default function index() {
     },
   ];
   return (
-    <motion.div variants={menuSlide} animate="enter" initial="initial" exit="exit" className={styles.menu}>
+    <motion.div variants={menuSlide} animate="enter" initial="initial"  className={styles.menu}>
       <div className={styles.body}>
         <div className={styles.nav}>
           <div className={styles.header}>
