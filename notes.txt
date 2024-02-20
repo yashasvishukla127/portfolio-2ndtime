@@ -21,4 +21,6 @@ index.tsx
 
 
     ERRORS / BUGS
-there was an error of deployment which was solved by doing changes in : .eslintrc.json
+1.there was an error of deployment which was solved by doing changes in : .eslintrc.json
+2. there was deployment error because of naming convention 
+    we need to keep export default Nav ( "N" must be capital and also name of the file)

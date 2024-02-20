@@ -1,53 +1,45 @@
-.header{
-    padding: 30px;
+.button{
     position: fixed;
     right: 0;
-    z-index: 20;
-
-    .button{
-        width: 80px;
-        height: 80px;
-        border-radius: 50%;
-        background-color: #455CE9;
-        cursor: pointer;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+    margin: 20px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #ec4e39;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 100;
 
     .burger{
         width: 100%;
-        &::after, &::before{
+        &::after , &::before{
             content: "";
             display: block;
-            height: 1px;
-            width: 40%;
+            width: 60%;
+            background-color: aliceblue;
+            height: 2px;
             margin: auto;
-            background-color: white;
             position: relative;
-            transition: transform 0.3s;
         }
 
         &::after{
             top: 5px;
         }
-
         &::before{
             top: -5px;
         }
     }
 
     .burgerActive{
-
         &::after{
-            transform: rotate(45deg);
+            transform: rotate(-45deg);
             top: -1px;
         }
-
         &::before{
-            transform: rotate(-45deg);
-            top: 0px;
+            top: 1px;
+            transform: rotate(45deg);
         }
-        
     }
 }

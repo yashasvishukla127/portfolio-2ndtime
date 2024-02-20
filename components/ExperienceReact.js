@@ -10,8 +10,8 @@ const Details = ({position , company , time , work}) => {
         
         <LiIcon reference={ref}/>
         <motion.div
-        initial={{x:500}}
-        whileInView={{x:0}}
+        initial={{y:100}}
+        whileInView={{y:0}}
         transition={{duration:0.5,type:"spring"}}
         >
             <h3 className='capitalize font-extrabold text-2xl text-[#0C2D57]'>
